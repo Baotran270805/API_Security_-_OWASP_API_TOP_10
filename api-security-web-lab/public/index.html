@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>API Shield Lab — Thực hành an toàn API</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Điều hướng chính">
+      <a class="brand" href="/dashboard"><span class="brand-mark">◈</span><span><strong>API SHIELD</strong><small>SECURITY LAB</small></span></a>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav id="nav-list" class="nav-list"></nav>
+      <div class="sidebar-bottom"><div class="tiny-info"><span class="pulse-dot"></span> Môi trường phòng lab</div><div class="tiny-note">Chỉ chạy ở 127.0.0.1 · Dữ liệu giả lập</div></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="topbar-left"><button id="mobile-menu" class="menu-button" aria-label="Mở menu">☰</button><span class="breadcrumbs" id="breadcrumb">Tổng quan</span></div>
+        <div class="topbar-actions"><span id="mode-badge" class="mode-badge">Đang tải...</span><span id="account-display" class="account-display"></span></div>
+      </header>
+      <main id="app" class="content"><div class="loading-panel">Đang tải nội dung...</div></main>
+      <footer class="footer">API Shield Lab · Web API Security · Node.js + Express + SQLite · Dùng cho thực hành cục bộ</footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

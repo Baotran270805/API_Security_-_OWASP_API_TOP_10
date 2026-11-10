@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-11-10T03:38:19.281Z",
+  "summary": {
+    "passed": 18,
+    "total": 18
+  },
+  "results": [
+    {
+      "name": "vulnerable health",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "vulnerable broken authentication",
+      "passed": true,
+      "message": "HTTP 200, token issued: true"
+    },
+    {
+      "name": "vulnerable own document",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "vulnerable BOLA",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "vulnerable excessive data exposure",
+      "passed": true,
+      "message": "Sensitive fields present: true"
+    },
+    {
+      "name": "vulnerable BFLA",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "vulnerable mass assignment",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "vulnerable resource consumption",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "vulnerable SQL injection",
+      "passed": true,
+      "message": "HTTP 200, Bob's document visible: true"
+    },
+    {
+      "name": "secure health",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "secure broken authentication",
+      "passed": true,
+      "message": "HTTP 401, token issued: false"
+    },
+    {
+      "name": "secure own document",
+      "passed": true,
+      "message": "HTTP 200"
+    },
+    {
+      "name": "secure BOLA",
+      "passed": true,
+      "message": "HTTP 403"
+    },
+    {
+      "name": "secure excessive data exposure",
+      "passed": true,
+      "message": "Sensitive fields present: false"
+    },
+    {
+      "name": "secure BFLA",
+      "passed": true,
+      "message": "HTTP 403"
+    },
+    {
+      "name": "secure mass assignment",
+      "passed": true,
+      "message": "HTTP 400"
+    },
+    {
+      "name": "secure resource consumption",
+      "passed": true,
+      "message": "HTTP 413"
+    },
+    {
+      "name": "secure SQL injection",
+      "passed": true,
+      "message": "HTTP 200, Bob's document visible: false"
+    }
+  ]
+}
